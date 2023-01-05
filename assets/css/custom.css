@@ -1,0 +1,276 @@
+body {
+  margin: 0px;
+}
+
+.header {
+  padding: 10px 18vw;
+}
+
+.header-sticky {
+  background-color: #FFF;
+  display: none;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.header-menus {
+  float: right;
+  display: flex;
+  gap: 50px;
+  text-decoration: underline;
+  margin-top: 10px;
+  color: #FFF;
+  font-family: Sriracha;
+}
+
+.header .header-menus a {
+  color: white;
+}
+
+.header-sticky .header-menus a {
+  color: rgb(68, 78, 116);
+}
+
+.homepage {
+  background: url(../images/home-bg.png);
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.homepage .title {
+  margin: 30vh 0 0 30vw;
+  font-size: 100px;
+  font-family: "Yantramanav";
+  font-weight: bold;
+  line-height: 90%;
+}
+
+.history {
+  background: url(../images/history-bg.png) 100% 90%;
+  background-size: cover;
+  background-position: top;
+  min-height: -webkit-fill-available;
+  padding: 50px 18vw;
+  position: relative;
+}
+
+.history .title {
+  position: relative;
+}
+
+.history .title-num {
+  font-size: 120px;
+  font-family: fantasy;
+  color: #667793;
+  display: inline-block;
+}
+
+.history .title-text {
+  position: absolute;
+  top: 60;
+  left: 110;
+  font-size: 35px;
+  color: #3b4e6e;
+  font-family: "Yantramanav";
+  font-weight: bold;
+  display: inline-block;
+}
+
+.history .content {
+  padding: 0px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 200%;
+  color: #333;
+}
+
+.history .carousel-container {
+  position: absolute;
+  width: 100%;
+  background-color: #242c48d1;
+  bottom: 0;
+  min-height: 20vh;
+  margin-left: -18vw;
+}
+
+.history .carousel {
+  width: 915px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #33333333;
+  overflow: hidden;
+  display: flex;
+  gap: 10px;
+}
+
+.history .carousel-transitioner {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translate(-50%, -50%);
+}
+
+.history .first {
+  transition: 2s;
+}
+
+.history .circle {
+  background-color: #958e8e87;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.history .circle:hover {
+  background-color: #999;
+}
+
+.history .active {
+  background-color: #FFF;
+}
+
+.team .title {
+  padding: 31px 18vw;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.team .main-title {
+  position: relative;
+}
+
+.team .title-num {
+  font-size: 120px;
+  font-family: fantasy;
+  color: #868d9b;
+  display: inline-block;
+}
+
+.team .title-text {
+  position: absolute;
+  top: 60;
+  left: 125;
+  font-size: 35px;
+  color: #3b4e6e;
+  font-family: "Yantramanav";
+  font-weight: bold;
+  display: inline-block;
+}
+
+.team .sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.team .nav {
+  background-color: rgb(68, 78, 116);
+  padding: 0px 18vw;
+  display: flex;
+}
+
+.team .mountain1 {
+  background: url(../images/mountain-1.png);
+}
+
+.team .mountain2 {
+  background: url(../images/mountain-2.png);
+}
+
+.team .nav-item-mountain {
+  font-family: "Yantramanav";
+  color: #BBB;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.team .nav-item:hover {
+  opacity: 0.8;
+}
+
+.team .active {
+  color: rgb(68, 78, 116);
+  background-color: #BBB;
+  text-decoration: underline;
+}
+
+.team .main {
+  background-size: 100% 70vh;
+  background-position: top;
+  background-size: cover;
+  min-height: 30vh;
+  padding: 15vh 20vw
+}
+
+.team .schedule {
+  background-color: white;
+  font-family: 'Yantramanav';
+  font-size: 30px;
+  font-weight: bold;
+  width: 330px;
+  margin: 20p;
+  padding: 20px 35px;
+}
+
+.team .schedule-item {
+  color: #AAA;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 180%;
+}
+
+.team .schedule-content {
+  display: inline-block;
+  float: right;
+}
+
+.footer {
+  padding: 10px 18vw;
+  background: #2e3a68e3;
+  color: #7a87b7db;
+}
+
+.footer .copyright {
+  float: right;
+  font-family: Sriracha;
+  font-family: 13px;
+  margin-top: 10px;
+}
+
+.logo {
+  display: flex;
+  font-family: 'Yantramanav';
+  font-weight: bold;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 1330px) {
+  .title {
+    font-size: 75px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .homepage .title {
+    font-size: 65px !important;
+    margin-left: 18vw !important;
+  }
+
+  .team .title {
+    padding-left: 10vw;
+  }
+
+  .footer {
+    padding-left: 10vw;
+  }
+}
